@@ -18,22 +18,23 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('', (req,res) => {
     res.render('index',{
         title: 'weather',
-        name: 'bobi'
+        name: 'simone'
     });
 })
 
 app.get('/about', (req,res) => {
     res.render('about',{
         title: 'about',
-        name: 'gesu'
+        name: 'simone'
     });
 })
 
 
 app.get('/help', (req,res) => {
     res.render('help',{
-      msg: 'ciaoooooooooo',
-      title: 'sono io'
+        title: 'help',
+      msg: 'help page',
+      name: 'simone'
     });
 })
 
