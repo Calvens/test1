@@ -1,6 +1,3 @@
-console.log('ciao');
-
-
 document.getElementById('btn').addEventListener('click', weather)
 
 
