@@ -8,11 +8,12 @@ function weather(e){
     then((response) => {
     response.json().then((data) => {
         if(data.error){
-            console.log(data.error)
+            document.querySelector('.msg1').innerText = data.error
+            document.querySelector('.msg2').innerText = ''
         }
         else{
-            console.log(data.address)
-            console.log(data.forecast)
+            document.querySelector('.msg1').innerText = data.address
+            document.querySelector('.msg2').innerText = data.forecast
         }
         
     })
