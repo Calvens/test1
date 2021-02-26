@@ -8,6 +8,7 @@ const foreCast = require('./forecast')
 
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.set('view engine','hbs');
 app.set('views', viewsPath);
@@ -82,6 +83,7 @@ res.send('404');
 })
 
 
-app.listen(3000, () => {
-    console.log(viewsPath);
+
+app.listen(port, () => {
+    console.log('run at port' + port);
 });
