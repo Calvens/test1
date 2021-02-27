@@ -75,11 +75,17 @@ app.get('/api', (req,res) => {
 });
 
 app.get('/help/*', (req,res) => {
-    res.send('404 help');
+    res.render('404',{
+        errorMessage: "error 404",
+        name: "simone"
+    });
     })
 
 app.get('*', (req,res) => {
-res.send('404');
+    res.render('404',{
+        errorMessage: "error 404",
+        name: "simone"
+    });
 })
 
 

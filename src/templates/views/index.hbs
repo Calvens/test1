@@ -9,16 +9,15 @@
 </head>
 <body>
     {{>header}}
-
-    <p class="msg1"></p>
-    <p class="msg2"></p>
-
-    <form>
-        <input placeholder="location" id="input">
-        <button id="btn">search</button>
-    </form>
-
-    {{!-- <img src="img/img.jpg" width="200px" height="100px"> --}}
+    <div class="main-content">
+        <form>
+            <input placeholder="location" id="input">
+            <button id="btn">search</button>
+        </form>
+        <p class="msg1"></p>
+        <p class="msg2"></p>
+    </div>
+    
     {{>footer}}
     <script src="js/script.js"></script>
 </body>
